@@ -95,6 +95,7 @@ document.body.addEventListener('click', (e) => {
   }
 });
 
+
 // Modo claro/escuro
 const themeToggleBtn = document.getElementById('toggle-theme');
 const currentTheme = localStorage.getItem('theme');
