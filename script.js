@@ -95,4 +95,18 @@ document.body.addEventListener('click', (e) => {
   }
 });
 
+// Modo claro/escuro
+const themeToggleBtn = document.getElementById('toggle-theme');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'light') {
+  document.body.classList.add('light-mode');
+}
+
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+  localStorage.setItem('theme', theme);
+});
+
 renderizarLista();
