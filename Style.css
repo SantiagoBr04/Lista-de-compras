@@ -111,3 +111,59 @@ input[type="text"] {
 .clear-btn:hover {
   background-color: #ff1744;
 }
+.extra-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#toggle-theme:hover {
+  color: #00e676;
+}
+
+#click-counter {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Tema claro */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+body.light-mode .container {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode input[type="text"] {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+body.light-mode #item-list li {
+  background-color: #eeeeee;
+}
+
+body.light-mode .clear-btn {
+  background-color: #d32f2f;
+}
+
+body.light-mode .clear-btn:hover {
+  background-color: #f44336;
+}
+
+body.light-mode #toggle-theme {
+  color: #000;
+}
+

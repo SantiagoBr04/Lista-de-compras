@@ -81,5 +81,18 @@ addBtn.addEventListener('click', () => {
 input.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') addBtn.click();
 });
+// Contador de cliques
+let clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
+const clickDisplay = document.getElementById('click-counter');
+clickDisplay.textContent = `Cliques: ${clickCount}`;
+
+document.body.addEventListener('click', (e) => {
+  // Só conta cliques em botões
+  if (e.target.closest('button')) {
+    clickCount++;
+    localStorage.setItem('clickCount', clickCount);
+    clickDisplay.textContent = `Cliques: ${clickCount}`;
+  }
+});
 
 renderizarLista();
