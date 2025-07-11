@@ -167,3 +167,37 @@ body.light-mode #toggle-theme {
   color: #000;
 }
 
+/*Tema roxo*/
+body.roxo-mode {
+  background-color: #dc08f8;
+  color: #121212;
+}
+
+body.roxo-mode .container {
+  background-color: #dc08f8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body.roxo-mode input[type="text"] {
+  background-color: #dc08f8;
+  color: #000;
+}
+
+body.roxo-mode #item-list li {
+  background-color: #dc08f8;
+}
+
+body.roxo-mode .clear-btn {
+  background-color: #640046;
+}
+
+body.roxo-mode .clear-btn:hover {
+  background-color: #b11a9d;
+}
+
+body.roxo-mode #toggle-theme {
+  color: #000;
+}
+
+
+

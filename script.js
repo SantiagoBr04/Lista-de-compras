@@ -110,4 +110,18 @@ themeToggleBtn.addEventListener('click', () => {
   localStorage.setItem('theme', theme);
 });
 
+// Modo roxo - não ta pronto
+const themaToggleBtn = document.getElementById('toggle-thema');
+const currentThema = localStorage.getItem('thema');
+
+if (currentThema === 'roxo') {
+  document.body.classList.add('roxo-mode');
+}
+
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('roxo-mode');
+  const theme = document.body.classList.contains('roxo-mode') ? 'light' : 'dark';
+  localStorage.setItem('thema', thema);
+});
+
 renderizarLista();
